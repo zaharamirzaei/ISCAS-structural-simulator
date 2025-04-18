@@ -1,6 +1,6 @@
 # 🧪 ISCAS Structural Simulator
 
-### 📌 Course: Testability (درس آزمون‌پذیری)  
+### 📌 Course: Testability
 **Instructor:** Dr. Shahin Hesabi  
 **Contributors:** Zahra Mirzaei 
 
