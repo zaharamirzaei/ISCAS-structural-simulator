@@ -21,7 +21,7 @@ The simulator supports a variety of logic gates and reads custom input values to
 .
 ├── iscas_structural_simulator.py   # Main Python script for simulation
 ├── sample_input.isc                # Example ISCAS-format circuit netlist (e.g., c17.isc)
-├── input_values.txt                # Input values for simulation
+├── input.txt                # Input values for simulation
 ├── final.txt                       # Simulation results
 └── README.md                       # Project description
 ```
