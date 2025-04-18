@@ -1,81 +1,89 @@
-🧪 ISCAS Structural Simulator
-📌 Course: Testability
+# 🧪 ISCAS Structural Simulator
 
-Instructor: Dr. Shahin Hesabi
-Contributors: Zahra Mirzaei
-📄 Project Description
+### 📌 Course: Testability (درس آزمون‌پذیری)  
+**Instructor:** Dr. Shahin Hesabi  
+**Contributors:** Zahra Mirzaei 
 
-This project implements a structural-level simulator for ISCAS benchmark combinational circuits.
+---
+
+## 📄 Project Description
+
+This project implements a **structural-level simulator** for **ISCAS benchmark combinational circuits**.  
 It parses netlists written in the ISCAS format and simulates the circuit behavior gate-by-gate using Python.
 
 The simulator supports a variety of logic gates and reads custom input values to compute the final logic state of all nodes.
-📂 Repository Structure
 
+---
+
+## 📂 Repository Structure
+
+```
 .
 ├── iscas_structural_simulator.py   # Main Python script for simulation
 ├── sample_input.isc                # Example ISCAS-format circuit netlist (e.g., c17.isc)
 ├── input_values.txt                # Input values for simulation
 ├── final.txt                       # Simulation results
 └── README.md                       # Project description
+```
 
-🛠 How to Use
+---
 
-    Download an ISCAS-format .isc netlist file from a trusted source like:
-    ISCAS-85 Benchmark Circuits
+## 🛠 How to Use
 
-    Prepare an input file containing logic values in this format:
+1. Download an ISCAS-format `.isc` netlist file from a trusted source like:  
+   [ISCAS-85 Benchmark Circuits](http://www.pld.ttu.ee/~maksim/benchmarks/iscas85/isc/)
 
+2. Prepare an input file containing logic values in this format:
+
+```
 node_address value
 ...
+```
 
-Run the simulator:
+3. Run the simulator:
 
-    python iscas_structural_simulator.py
+```bash
+python iscas_structural_simulator.py
+```
 
-    Provide the required filenames when prompted.
+4. Provide the required filenames when prompted.
 
-    The output will be saved in final.txt, showing each node’s logic value and stuck-at faults (if any).
+5. The output will be saved in `final.txt`, showing each node’s logic value and stuck-at faults (if any).
 
-🔧 Supported Logic Gates
+---
 
-    AND
+## 🔧 Supported Logic Gates
 
-    NAND
+- AND
+- NAND
+- OR
+- NOR
+- XOR
+- XNOR
+- NOT
+- BUF
+- FANOUT
 
-    OR
+---
 
-    NOR
+## 📋 Sample Output
 
-    XOR
-
-    XNOR
-
-    NOT
-
-    BUF
-
-    FANOUT
-
-📋 Sample Output
-
+```
 Node Address     Value
 1                1
 2                0
 ...
+```
 
 For each node, the simulator also reports:
+- Address
+- Type
+- Fan-ins and fan-outs
+- Fault information (stuck-at-0 / stuck-at-1)
 
-    Address
+---
 
-    Type
+## 🔗 Useful Resources
 
-    Fan-ins and fan-outs
-
-    Fault information (stuck-at-0 / stuck-at-1)
-
-🔗 Useful Resources
-
-    ISCAS Benchmark Info
-
-    Netlist Downloads
-
+- [ISCAS Benchmark Info](https://web.eecs.umich.edu/~jhayes/iscas.restore/)
+- [Netlist Downloads](http://www.pld.ttu.ee/~maksim/benchmarks/iscas85/isc/)
